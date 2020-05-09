@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y curl
 ADD get-latest-version.sh .
 RUN bash get-latest-version.sh
 
-ENV WALLET
+ENV WALLET NaN
 ENV POOL pool.supportxmr.com:5555
 ENV PASSWORD x
 ENV ALGO rx/0
