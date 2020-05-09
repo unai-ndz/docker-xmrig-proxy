@@ -17,13 +17,13 @@ docker run -d -e POOL='<your pool url>' \
 -e ALGO='<needed mining algorithm>' \
 -p 3333:3333 \
 -p 3334:3334 \
---name xmrig-proxy xmrig/xmrig-proxy:latest
+--name xmrig-proxy molecul/xmrig-proxy:latest
 ```
 
 For example (minimal command):
 
 ```sh
-docker run --rm -d -e POOL='pool.supportxmr.com:5555' -e WALLET='46bDdBeUmSQDwma1Xqps51PQZsUw39JGXAsPb13zmhDB4wssWVDCn5KeUA2nFUJnvMNftJaE7UExoEensVw26dXHCUUhd28' -p 3333:3333 xmrig/xmrig-proxy:latest
+docker run --rm -d -e POOL='pool.supportxmr.com:5555' -e WALLET='46bDdBeUmSQDwma1Xqps51PQZsUw39JGXAsPb13zmhDB4wssWVDCn5KeUA2nFUJnvMNftJaE7UExoEensVw26dXHCUUhd28' -p 3333:3333 molecul/xmrig-proxy:latest
 ```
 
 ## Environment variables
